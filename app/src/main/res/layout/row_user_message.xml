@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_message"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_message_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_alignParentEnd="true"
+        android:text="gopikrishna.ashwin@gmail.com"
+        android:visibility="gone"
+        android:textStyle="bold" />
+
+
+    <android.support.v7.widget.CardView
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="14dp"
+        android:id="@+id/cv_row_message_user_card"
+        app:cardBackgroundColor="@color/md_green_700"
+        app:cardCornerRadius="5dp"
+        android:layout_below="@id/tv_message_name">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:letterSpacing=".05"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:id="@+id/tv_message_text"
+            android:gravity="start"
+            android:text="Hello asdf ds "/>
+
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv_row_message_user_card"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentEnd="true"
+        android:text="10:30 AM, 10/07/2018" />
+
+</RelativeLayout>

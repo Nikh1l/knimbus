@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_blue_grey_50">
+
+    <ImageButton
+        android:id="@+id/ib_assistant_testing_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@android:drawable/ic_menu_send"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/send_a_message" />
+
+    <EditText
+        android:id="@+id/et_assistant_testing_message"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="@string/send_a_message"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/ib_assistant_testing_send"
+        android:inputType="textAutoComplete|textAutoCorrect" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_messages"
+        android:layout_width="match_parent"
+        android:layout_above="@id/et_assistant_testing_message"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_assistant_testing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
